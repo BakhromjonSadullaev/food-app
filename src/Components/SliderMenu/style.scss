@@ -1,0 +1,43 @@
+.sliderMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin: auto;
+  margin-top: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.rec.rec-arrow {
+  border-radius: 0;
+  border: none !important;
+  background: none;
+  box-shadow: none;
+  font-size: 2.5rem !important;
+  color: rgb(0, 202, 0);
+}
+
+.rec.rec-arrow:hover {
+  background: none !important;
+  box-shadow: none !important;
+  color: green !important;
+  font-size: 3rem !important;
+}
+
+.rec.rec-arrow:focus {
+  background: none !important;
+  box-shadow: none !important;
+  color: green !important;
+  font-size: 3.5rem !important;
+}
+
+.rec.rec-arrow:disabled {
+  display: none;
+}
+
+.carousel p {
+  font-size: 23px;
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-left: -3.8rem;
+}

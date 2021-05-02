@@ -1,0 +1,43 @@
+.delivery {
+  border: 1px solid black;
+  padding: 5rem 0;
+}
+
+.delivery-container {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.delivery-info {
+  max-width: 550px;
+  margin-left: 2rem;
+}
+
+.delivery-info h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 31px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.delivery-info button {
+  font-size: 25px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 35px;
+  margin-top: 5px;
+  background-color: #00ac4e;
+  color: white;
+  cursor: pointer;
+}
+
+.delivery-info button:hover {
+  background-color: #00833b;
+}

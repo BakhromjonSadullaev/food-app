@@ -1,0 +1,93 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  .navbar-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+  }
+
+  .nav-menu {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .menu-container {
+      position: absolute;
+
+      z-index: 1;
+      width: 210px;
+      top: -6px;
+      left: -60px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      background-color: white;
+
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+      .foods {
+        margin: 8px 0;
+        font-size: 12px;
+      }
+
+      .foods:hover {
+        color: rgb(0, 165, 0);
+      }
+
+      .foods span {
+        margin-left: 12px;
+      }
+    }
+    .menu {
+      cursor: pointer;
+    }
+
+    .nav-menu > p {
+      cursor: pointer;
+    }
+
+    .phone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .user-cart {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 29px;
+    color: green;
+  }
+
+  .cart {
+    position: relative;
+  }
+
+  .cart p {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 18px;
+    background-color: rgb(0, 165, 0);
+    padding: 3px 5px;
+    color: white;
+    font-weight: 500;
+    border-radius: 30px;
+  }
+}

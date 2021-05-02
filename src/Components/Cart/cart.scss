@@ -1,0 +1,49 @@
+.cart-page {
+  width: 65%;
+  margin: auto;
+  border: 1px solid red;
+  font-family: "Montserrat", sans-serif;
+
+  .cart-container {
+    margin-top: 2rem;
+    border: 1px solid blue;
+    width: 50%;
+  }
+
+  .cart-container h1 {
+    padding-bottom: 1rem;
+  }
+
+  .added-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+  }
+
+  .added-product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+  }
+  .quantity {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+  }
+
+  .quantity input {
+    width: 50px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #fcfcfc;
+  }
+  .quantity button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

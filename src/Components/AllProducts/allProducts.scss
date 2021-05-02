@@ -1,0 +1,21 @@
+.allProducts {
+  border: 1px solid red;
+  width: 65%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.allProducts > h1 {
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.products-container {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}

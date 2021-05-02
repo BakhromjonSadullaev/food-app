@@ -1,0 +1,52 @@
+.HomeBanner {
+  width: 65%;
+  margin: auto;
+  margin-top: 4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.HomeBanner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #f1f1fb 0%, #ebebf5 100%);
+  width: 100%;
+  height: 255px;
+  border-radius: 5px;
+}
+
+img-container img {
+  object-fit: cover;
+  height: 250px;
+  border: 1px solid black;
+}
+
+.info {
+  margin-left: 5rem;
+}
+
+.info h1 {
+  font-size: 31px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.info p {
+  color: #828282;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+
+.info button {
+  border: none;
+  background-color: #00ac4e;
+  font-size: 25px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.info button:hover {
+  background-color: #009e47;
+}
