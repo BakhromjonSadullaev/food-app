@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+  padding: 5rem 10rem;
+  background-color: #00ac4e;
+  color: white;
+}
+.footer-container {
+  font-size: 16px;
+  margin-left: 10rem;
+}
+
+.phone-container {
+  width: 500px;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.footer-info {
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.lisence {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.footer-contact {
+  margin-left: 5rem;
+}
+
+.footer-signIn {
+  margin-left: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer-contact p {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}

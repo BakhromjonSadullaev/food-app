@@ -1,0 +1,79 @@
+.order-cheque {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+.order-cheque h2 {
+  margin-bottom: 2rem;
+}
+
+.products-in-cart {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.order-cheque button {
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 35px;
+  margin-top: 5px;
+  background-color: #00ac4e;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.order-cheque button:hover {
+  background-color: #008b3f;
+}
+
+.order-cheque button:disabled {
+  opacity: 0.6;
+}
+
+.promocode {
+  margin-top: 10rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.promocode h4 {
+  margin-bottom: 0.7rem;
+}
+
+.promocode input {
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+
+.promocode input::placeholder {
+  color: #c4c4c4;
+}
+
+.promocode button {
+  padding: 15px 20px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #00ac4e;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.promocode button:hover {
+  background-color: #009242;
+}

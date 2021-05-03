@@ -5,10 +5,14 @@
   min-height: 100px;
   font-family: "Montserrat", sans-serif;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  // position: sticky;
+  // top: 0;
+  background-color: white;
+  z-index: 1;
 
   .navbar-container {
     display: flex;
-
+    background-color: white;
     align-items: center;
     justify-content: space-between;
     width: 65%;
@@ -77,17 +81,98 @@
 
   .cart {
     position: relative;
+    color: green;
   }
+}
 
-  .cart p {
-    position: absolute;
-    top: -15px;
-    right: -10px;
-    font-size: 18px;
-    background-color: rgb(0, 165, 0);
-    padding: 3px 5px;
-    color: white;
-    font-weight: 500;
-    border-radius: 30px;
-  }
+.nav-count {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 18px;
+  background-color: rgb(0, 165, 0);
+  padding: 3px 5px;
+  color: white;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.336);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modal-container {
+  width: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // margin-top: -40rem;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(46, 41, 41, 0.116) 0px 8px 24px;
+}
+
+.modal-container input {
+  margin: 1rem 0;
+  padding: 20px 20px;
+  width: 70%;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  outline: none;
+}
+
+.modal-container input::placeholder {
+  color: lightgray;
+}
+
+.register {
+  margin: 2rem 0 3rem 0;
+  padding: 15px 25px;
+  border: none;
+  background-color: #00ac4e;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.register:hover {
+  background-color: #018d40;
+}
+
+.modal-container form {
+  display: flex;
+  align-items: center;
+
+  width: 70%;
+}
+
+.modal-container form span {
+  font-size: 10px;
+  color: rgb(163, 163, 163);
+}
+
+.modal-close {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 5px 10px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #00ac4e;
+  cursor: pointer;
 }

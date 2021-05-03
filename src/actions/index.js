@@ -13,10 +13,16 @@ export function addToBasket({ id, img, title, info, stars, price, count }) {
   };
 }
 
-export function incrementQuantity(id, val) {
+export function removeFromCart(id) {
   return {
-    type: "INCREMENT_QUANTITY",
-    id,
-    up: val,
+    type: "REMOVE_FROM_CART",
+    payload: id,
+  };
+}
+
+export function clearItemFromCart(id) {
+  return {
+    type: "CLEAR_ITEM_FROM_CART",
+    payload: id,
   };
 }

@@ -5,16 +5,21 @@ import { Link } from "react-router-dom";
 
 import { FiPhone } from "react-icons/fi";
 import { BiUser } from "react-icons/bi";
+import { CgClose } from "react-icons/cg";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { GiFoodChain, GiTomato } from "react-icons/gi";
 import { IoFastFoodOutline } from "react-icons/io5";
 
 import { useSelector } from "react-redux";
+import { totalCount } from "../../reducers/basketReducer";
 
 const Navbar = () => {
   const basket = useSelector((state) => state.basketReducer.basket);
+  const count = totalCount(basket);
   const [showMenu, setShowMenu] = useState(false);
-  console.log(basket.length);
+  const [open, setOpen] = useState(false);
+  const [showUserAuth, setShowUserAuth] = useState(false);
+
   return (
     <div className="navbar">
       <div className="navbar-container">
@@ -86,15 +91,57 @@ const Navbar = () => {
           </div>
         </div>
         <div className="user-cart">
-          <BiUser style={{ cursor: "pointer" }} />
+          <BiUser
+            onClick={() => setShowUserAuth(true)}
+            style={{ cursor: "pointer" }}
+          />
           <Link to="/cart">
             <div className="cart">
               <RiShoppingCartLine style={{ cursor: "pointer" }} />
-              <p>{basket.length}</p>
+              {count !== 0 && <p className="nav-count">{count}</p>}
             </div>
           </Link>
         </div>
       </div>
+      {showUserAuth && (
+        <div className="modal">
+          <div className="modal-container">
+            <button
+              className="modal-close"
+              onClick={() => setShowUserAuth(false)}
+            >
+              <CgClose />
+            </button>
+            <BiUser
+              style={{
+                fontSize: "2rem",
+                marginTop: "1.5rem",
+                marginBottom: "1rem",
+                color: "lightgray",
+              }}
+            />
+            <h1
+              style={{
+                marginBottom: "1rem",
+                fontWeight: "400",
+                fontSize: "25px",
+              }}
+            >
+              Регистрация
+            </h1>
+            <input placeholder="Телефон" type="tel" />
+            <input placeholder="Пароль" type="password" />
+            <input placeholder="Подтвердите пароль" type="password" />
+            <form>
+              <input style={{ marginLeft: "-4rem" }} type="checkbox" />
+              <span style={{ marginLeft: "-4rem" }}>
+                Хочу получать выгодные предложения от магазина
+              </span>
+            </form>
+            <button className="register">Зарегистрироваться</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

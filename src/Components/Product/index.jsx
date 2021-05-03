@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./style.scss";
 
 import { addToBasket } from "../../actions";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import ReactStars from "react-rating-stars-component";
+import basketReducer, { addItemToCart } from "../../reducers/basketReducer";
 const Product = ({ id, img, title, info, stars, price, count }) => {
-  const [disabled, setDisabled] = useState(false);
+  const basket = useSelector((state) => state.basketReducer.basket);
   const dispatch = useDispatch();
   return (
     <div className="product">
@@ -29,13 +30,13 @@ const Product = ({ id, img, title, info, stars, price, count }) => {
           <span>За 500гр.</span>
         </div>
         <button
-          disabled={disabled}
-          onClick={() => (
-            setDisabled(true),
+          onClick={() =>
             dispatch(addToBasket({ id, img, title, info, stars, price, count }))
-          )}
+          }
         >
-          {disabled ? "в корзине" : "добавить в корзину"}
+          {basket.some((el) => el.id === id)
+            ? "в корзине"
+            : "добавить в корзину"}
         </button>
       </div>
     </div>

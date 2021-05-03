@@ -1,13 +1,15 @@
 .cart-page {
   width: 65%;
   margin: auto;
-  border: 1px solid red;
+
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
 
   .cart-container {
     margin-top: 2rem;
-    border: 1px solid blue;
-    width: 50%;
+
+    width: 60%;
   }
 
   .cart-container h1 {
@@ -18,7 +20,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 15px 0;
   }
 
   .added-product img {
@@ -45,5 +49,39 @@
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+    outline: none;
+  }
+
+  .order-cheque-container {
+    margin-top: 2rem;
+  }
+
+  .bonus {
+    margin-top: 7rem;
+    width: 70%;
+    padding: 40px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+  }
+
+  .bonus p {
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+  }
+
+  .bonus-info {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bonus-info img {
+    margin-right: 1.5rem;
+  }
+
+  .bonus-info h4 {
+    font-weight: 500;
   }
 }
